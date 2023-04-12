@@ -43,17 +43,23 @@ export default function Home() {
                 </ul>       
           </article>
         </section>
-        <div class="container">
-          <div class="mission">
-            <h2>Misión</h2>
-            <p>Servir de plataforma para la formación investigativa de los estudiantes en la aplicación de videojuegos y realidad mixta con fines académicos y sociales.</p>
-            <p>Esto orientado a fortalecer el programa de Ingeniería de Sistemas en su compromiso alta calidad. </p>
+          <div className="container">
+            <div className="mision">
+              <h2>Misión</h2>
+              <p>
+                Servir de plataforma para la formación investigativa de los estudiantes en la aplicación de videojuegos y realidad mixta con fines académicos y sociales. 
+              </p>
+              <p>
+                Esto orientado a fortalecer el programa de Ingeniería de Sistemas en su compromiso alta calidad. 
+              </p>
+            </div>
+            <div className="vision">
+              <h2>Visión</h2>
+              <p>
+                El Semillero de Investigación VIRAL será reconocido regional, nacional e internacionalmente como pionero en la formación en investigación aplicada al uso de los videojuegos y realidad mixta con fines sociales y académicos. 
+              </p>
+            </div>
           </div>
-          <div class="vision">
-            <h2>Visión</h2>
-            <p>El Semillero de Investigación VIRAL será reconocido regional, nacional e internacionalmente como pionero en la formación en investigación aplicada al uso de los videojuegos y realidad mixta con fines sociales y académicos.</p>
-          </div>
-        </div>
       </main>
     </Layout>
   )

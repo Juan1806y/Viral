@@ -10,22 +10,38 @@
   margin: 0;
 }
 .container {
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  margin: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); 
 }
 
-.mission {
-  flex: 1;
-  padding: 20px;
+.mision, .vision {
+  width: 45%; 
+}
+
+.mision {
+  text-align: left;
+  padding-left: 50px;
 }
 
 .vision {
-  flex: 1;
-  padding: 20px;
+  text-align: left;
+  padding-right: 50px;
 }
+
+.container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background-color:#9893FF;
+}
+
 
 .social-links {
   display: flex;
@@ -303,6 +319,8 @@ button.block {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .page {
   min-height: calc(100vh - (6rem + 4rem));
@@ -387,6 +405,7 @@ form > *:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #C5C3FF;
 }
 .nav-center {
   width: 90vw;
@@ -573,7 +592,7 @@ form > *:last-child {
   }
 }
 
-.featured-recipes > h5 {
+.featured-proyectss > h5 {
   text-align: center;
   max-width: 100%;
 }
@@ -615,14 +634,14 @@ form > *:last-child {
 }
 
 /*#########*/
-/* Recipes */
+/* Proyects */
 /*#########*/
-.recipes-container {
+.proyects-container {
   display: grid;
   gap: 2rem 1rem;
 }
 
-.recipes-list {
+.proyects-list {
   display: grid;
   gap: 2rem 1rem;
   padding-bottom: 3rem;
@@ -631,7 +650,6 @@ form > *:last-child {
   order: 1;
   display: flex;
   flex-direction: column;
-  /* background: blue; */
 }
 .tags-list {
   display: grid;
@@ -650,49 +668,49 @@ form > *:last-child {
 .tags-list a:hover {
   color: var(--primary-500);
 }
-.recipe {
+.proyects {
   display: block;
 }
-.recipe-img {
+.proyects-img {
   height: 15rem;
   border-radius: var(--borderRadius);
 }
-.recipe h5 {
+.proyects h5 {
   margin-bottom: 0;
   margin-top: 0.25rem;
   line-height: 1;
   color: var(--textColor);
   font-weight: 600;
 }
-.recipe p {
+.proyects p {
   margin-bottom: 0;
   line-height: 1;
   color: var(--grey-800);
   margin-top: 0.5rem;
 }
 @media screen and (min-width: 576px) {
-  .recipes-list {
+  .proyectss-list {
     grid-template-columns: 1fr 1fr;
   }
-  .recipe-img {
+  .proyects-img {
     height: 10rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .recipes-container {
+  .proyectss-container {
     grid-template-columns: 200px 1fr;
     gap: 1rem;
   }
-  .recipes-list {
+  .proyectss-list {
     grid-template-columns: 1fr 1fr;
   }
 
-  .recipe-img {
+  .proyects-img {
     height: 9rem;
   }
 
-  .recipe p {
+  .proyects p {
     font-size: 0.85rem;
   }
   .tags-container {
@@ -706,10 +724,10 @@ form > *:last-child {
 }
 
 @media screen and (min-width: 1200px) {
-  .recipe h5 {
+  .proyects h5 {
     font-size: 1.15rem;
   }
-  .recipes-list {
+  .proyectss-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -752,45 +770,45 @@ form > *:last-child {
 }
 
 /*#########*/
-/* Recipe Template */
+/* proyects Template */
 /*#########*/
 
-.recipe-hero {
+.proyects-hero {
   display: grid;
   gap: 3rem;
 }
-.recipe-hero .about-img {
+.proyects-hero .about-img {
   height: 400px;
 }
-.recipe-icons {
+.proyects-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin: 2rem 0;
   text-align: center;
 }
-.recipe-icons svg {
+.proyects-icons svg {
   font-size: 1.5rem;
 }
-.recipe-icons h5,
-.recipe-icons p {
+.proyects-icons h5,
+.proyects-icons p {
   margin-bottom: 0;
   font-size: 0.85em;
 }
-.recipe-icons h5 {
+.proyects-icons h5 {
   font-weight: 600;
 }
-.recipe-icons p {
+.proyects-icons p {
   color: var(--grey-800);
 }
-.recipe-tags {
+.proyects-tags {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.7em;
   font-weight: 600;
 }
-.recipe-tags a {
+.proyects-tags a {
   background: var(--primary-500);
   border-radius: var(--borderRadius);
   color: var(--white);
@@ -799,18 +817,18 @@ form > *:last-child {
   text-transform: capitalize;
 }
 @media screen and (min-width: 992px) {
-  .recipe-hero {
+  .proyects-hero {
     grid-template-columns: 4fr 5fr;
     align-items: center;
   }
 }
-.recipe-content {
+.proyects-content {
   padding: 3rem 0;
   display: grid;
   gap: 2rem 5rem;
 }
 @media screen and (min-width: 992px) {
-  .recipe-content {
+  .proyects-content {
     grid-template-columns: 2fr 1fr;
   }
 }
