@@ -43,7 +43,7 @@ export default function Home() {
                 </ul>       
           </article>
         </section>
-          <div className="container">
+          <div className="container-home">
             <div className="mision">
               <h2>Misión</h2>
               <p>
