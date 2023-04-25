@@ -8,19 +8,24 @@ import GDD from '../assets/img/icono-GDD.png'
 import TresD from '../assets/img/icono-3d.png'
 import Unreal from '../assets/img/icono-unreal.png'
 import Playground from '../assets/img/icono-playground.png'
+import Carrusel from '../components/Carrusel'
 
 
 const about = () => {
   return (
     <Layout>
        <main className="page">
+        <div className='trayectoria'>
+          <h1>Trayectoria</h1>
+          <Carrusel/>
+        </div>
         <section className="about-page3">
           <article>
             <h3>¿Qué se ha hecho?</h3>
               <p>Aquí podrás conocer más acerca de las capacitaciones y asesorías brindadas por el semillero, orientadas al aprendizaje para el desarrollo de videojuegos.</p> 
           </article>
         </section>
-        <section>
+        <section className = "container-grid">
           <ContainersAbout 
             titulo = "Capacitación 2D en Unity para principiantes"  
             asesor = "Juan Pablo Ariza"
@@ -68,6 +73,7 @@ const about = () => {
             asesor = "Andrés Niño Peñaranda"
             descripcion = "Playground" 
             imagen = {Playground}
+            className="last-container"
             >
           </ContainersAbout>
         </section>

@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 75%;
+  width: 80%;
   height: 200px;
   margin: 50px auto;
   background-color: #f7f7f7;
@@ -45,7 +45,7 @@
 }
 
 .container-content-box h2 {
-  font-size: 28px;
+  font-size: 22px;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -608,6 +608,53 @@ form > *:last-child {
 /*#########*/
 /* About */
 /*#########*/
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 20px;
+  justify-items: center; 
+  align-items: center; 
+}
+
+.container-grid > div:last-child {
+  grid-column-start: 1;
+  grid-column-end: 3; 
+}
+
+.trayectoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to right, #f5f5f5 50%, #cccccc 50%);
+  color:#191740;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.carousel-container {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.slick-slide img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-list {
+  display: flex;
+  justify-content: center;
+}
+
 
 .about-page h2 {
   text-transform: none;
