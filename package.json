@@ -15,10 +15,11 @@
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.8.1",
-    "gatsby-plugin-image": "^3.8.0",
+    "gatsby-plugin-image": "^3.9.0",
     "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-plugin-styled-components": "^6.8.0",
-    "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-source-contentful": "^8.9.1",
+    "gatsby-source-filesystem": "^5.9.0",
     "gatsby-transformer-sharp": "^5.8.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",

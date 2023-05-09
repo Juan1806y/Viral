@@ -1,11 +1,13 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import AllParticipaciones from '../components/AllParticipaciones'
 
 const Participacion = () => {
   return (
     <Layout>
-      <h1>hello from participacion page.</h1>
-      <p></p>
+      <main className='page'>
+        <AllParticipaciones></AllParticipaciones> 
+      </main>
     </Layout>
   )
 }
