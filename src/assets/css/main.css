@@ -972,3 +972,46 @@ form > *:last-child {
   color: var(--primary-500);
   text-transform: capitalize;
 }
+
+/*#########*/
+/* CSS Gallery */
+/*#########*/
+
+.gallery-body {
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+
+.galley-image {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+.galley-image:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*#########*/
+/* CSS ArticleGame */
+/*#########*/
+
+.article-game-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.article-game-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.article-game-container {
+  padding: 2px 16px;
+}
