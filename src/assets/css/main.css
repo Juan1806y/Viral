@@ -899,10 +899,16 @@ form > *:last-child {
 /* CSS Gallery */
 /*#########*/
 
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
 .gallery-body {
   display: flex;
-  width: 600px;
-  height: 430px;
+  width: 1200px;
+  height: 50vh;
 }
 
 .galley-image {
@@ -915,7 +921,7 @@ form > *:last-child {
 
 .galley-image:hover {
   cursor: crosshair;
-  width: 300px;
+  width: 500px;
   opacity: 1;
   filter: contrast(120%);
 }
