@@ -13,31 +13,39 @@ const Proyectos = () => {
     <Layout>
       <div className="page">
         <Gallery />
-        <ArticleGame
-          src={Image1}
-          title={"Cap Trop"}
-          text={"La descripcion del videojuego"}
-        />
-        <ArticleGame
-          src={Image2}
-          title={"RECYCLOMAN"}
-          text={"La descripcion del videojuego"}
-        />
-        <ArticleGame
-          src={Image3}
-          title={"Fractio"}
-          text={"La descripcion del videojuego"}
-        />
-        <ArticleGame
-          src={Image4}
-          title={"Viral Space"}
-          text={"La descripcion del videojuego"}
-        />
-        <ArticleGame
-          src={Image5}
-          title={"FunMathS"}
-          text={"La descripcion del videojuego"}
-        />
+        <section className="about-page3">
+          <article>
+            <h3>Listado de proyectos</h3>
+              <p>Aquí podrás conocer más acerca de las aplicaciones realizadas por el semillero.</p> 
+          </article>
+        </section>
+        <section className="container-grid">
+          <ArticleGame
+            src={Image1}
+            title={"Cap Trop"}
+            text={"La descripcion del videojuego"}
+          />
+          <ArticleGame
+            src={Image2}
+            title={"RECYCLOMAN"}
+            text={"La descripcion del videojuego"}
+          />
+          <ArticleGame
+            src={Image3}
+            title={"Fractio"}
+            text={"La descripcion del videojuego"}
+          />
+          <ArticleGame
+            src={Image4}
+            title={"Viral Space"}
+            text={"La descripcion del videojuego"}
+          />
+          <ArticleGame
+            src={Image5}
+            title={"FunMathS"}
+            text={"La descripcion del videojuego"}
+          />
+        </section>
       </div>
     </Layout>
   );

@@ -11,11 +11,11 @@ const Gallery = () => {
   return (
     <div className="gallery-container">
       <section className="gallery-body">
-        <img className="galley-image" src={Image1} alt="img1" />
-        <img className="galley-image" src={Image2} alt="img2" />
-        <img className="galley-image" src={Image3} alt="img3" />
-        <img className="galley-image" src={Image4} alt="img4" />
-        <img className="galley-image" src={Image5} alt="img5" />
+        <img className="gallery-image" src={Image1} alt="img1" />
+        <img className="gallery-image" src={Image2} alt="img2" />
+        <img className="gallery-image" src={Image3} alt="img3" />
+        <img className="gallery-image" src={Image4} alt="img4" />
+        <img className="gallery-image" src={Image5} alt="img5" />
       </section>
     </div>
   );
