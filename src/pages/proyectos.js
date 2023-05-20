@@ -2,37 +2,41 @@ import React from "react";
 import Layout from "../components/Layout";
 import Gallery from "../components/Gallery";
 import ArticleGame from "../components/ArticleGame";
+import Image1 from '../assets/img/Imagen1.jpg'
+import Image2 from '../assets/img/Imagen2.jpg'
+import Image3 from '../assets/img/Imagen3.png'
+import Image4 from '../assets/img/Imagen4.jpg'
+import Image5 from '../assets/img/Imagen5.jpg'
+
+
 
 const Proyectos = () => {
   return (
     <Layout>
       <Gallery />
       <ArticleGame
-        image={
-          "https://cdn.dribbble.com/users/217475/screenshots/6322042/video-game.png?compress=1&resize=400x300&vertical=top"
-        }
-        title={"El titulo 1"}
+        src={Image1}
+        title={"Cap Trop"}
         text={"La descripcion del videojuego"}
       />
       <ArticleGame
-        image={
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIgF3wic3eAlRqAlSjDXu4m22W2Z6R5l5rQg&usqp=CAU"
-        }
-        title={"El titulo 2"}
+        src={Image2}
+        title={"RECYCLOMAN"}
         text={"La descripcion del videojuego"}
       />
       <ArticleGame
-        image={
-          "https://www.seekpng.com/png/detail/208-2086671_video-game-icons-video-game-character-icon.png"
-        }
-        title={"El titulo 3"}
+        src={Image3}
+        title={"Fractio"}
         text={"La descripcion del videojuego"}
       />
       <ArticleGame
-        image={
-          "https://www.kindpng.com/picc/m/229-2297893_icon-packs-vector-video-game-icons-png-transparent.png"
-        }
-        title={"El titulo 4"}
+        src={Image4}
+        title={"Viral Space"}
+        text={"La descripcion del videojuego"}
+      />
+      <ArticleGame
+        src={Image5}
+        title={"FunMathS"}
         text={"La descripcion del videojuego"}
       />
     </Layout>
