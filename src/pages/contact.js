@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Layout from '../components/Layout'
 import SocialIcons from '../components/SocialIcons'
+import  emailjs, {init} from '@emailjs/browser'
+init('QCAjYjhWtTN0Fgmf8')
 
 function Contact() {
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm("service_ud7kyei", "template_imyjgk9", form.current, "QCAjYjhWtTN0Fgmf8").then(
+      (result) => {
+        alert("Mensaje enviado correctamente");
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
   return (
     <Layout>
       <main className='page'>
@@ -14,18 +29,20 @@ function Contact() {
             <SocialIcons></SocialIcons>
           </article>
           <article>
-            <form className="form contact-form">
+            {/* template id -  template_imyjgk9 */}
+            {/* service id - service_ud7kyei */}
+            <form className="form contact-form" onSubmit={handleSubmit} ref={form}> 
               <div className="form-row">
                 <label htmlFor="name">Nombre:</label>
-                <input type="text" name="name" id="name"/>
+                <input type="text" name="name" id="name" placeholder="Claudia Gomez"/>
               </div>
               <div className='form-row'>
                 <label htmlFor="email">Correo Electrónico:</label>
-                <input type="text" name="email" id="email"/>
+                <input type="text" name="email" id="email" placeholder="claudia@ufps.edu.com"/>
               </div>
               <div className='form-row'>
                 <label htmlFor='message'>Mensaje:</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" placeholder="La presente es para solicitar ..."></textarea>
               </div>
               <button type="submit" className="btn block">
                 Enviar  
