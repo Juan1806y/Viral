@@ -1,40 +1,56 @@
-
-https://markdown.es/
-https://pandao.github.io/editor.md/en.html
+# Proyecto Seminario Integrador 
 
 
------------------------
-titulo - nombre del proyecto
+## Página web Viral
 
-resumen
-proposito del proyecto
-tabla de contenido
- - 
- -
- -
+### Resumen
+Nuestro proyecto es una página web desarrollada como parte de la materia de Seminario Integrador, con el objetivo de aplicar los conocimientos adquiridos a lo largo del curso.
 
- paginas que puedes ver en e proy
+La página web se centra en brindar información y recursos relacionados con Viral, proporcionando una plataforma interactiva y fácil de usar para los usuarios.
 
-pagina donde está desplegado el proy
+Durante el desarrollo de este proyecto, hemos utilizado diversas tecnologías y herramientas como HTML, CSS, JavaScript y frameworks populares como ReactJS. Además, hemos aplicado principios de diseño responsivo para garantizar que nuestra página web sea accesible y se adapte a diferentes dispositivos y tamaños de pantalla.
 
 
- Infomacion de los desarrolladores
-  - nombres
-  - github
+### Páginas desarrolladas
+| Nombre      | Ruta |
+| --------- | -----:|
+| Home  | " / " |
+| Proyectos  | " /proyectos " |
 
-listado de tecnologias
- - css 
- - react 
- - nodejs [version]
- - gatsby
-...
+### Cómo ejecutar en local el proyecto
+1. Inicializar un nuevo proyecto.
 
- como ejecutar en local el proyecto
-  - configuraciones
-  - npm run install
-  - npm run start
+		npm init gatsby
 
-licencia
-- describir que es un proyecto de universidad ----
-- licencia abierta 2023 
-- materia ---
+2. Inicie el sitio en develop modo.
+
+		cd my-gatsby-site/
+		npm run develop
+
+3. ¡Abre el código fuente y empieza a editar!
+
+Su sitio ahora se está ejecutando en http://localhost:8000. Abra el my-gatsby-sitedirectorio en el editor de código de su elección y edítelo src/pages/index.js. ¡Guarde sus cambios y el navegador se actualizará en tiempo real!
+
+### Despliegue del proyecto
+1. -
+2. -
+3. -
+
+### Listado de tecnologias
+| Tecnología      | Version |
+| --------- | -----:|
+| Nodejs  | 20 |
+| Gatsby     |  -  |
+| React     |  -  |
+| Graphql     |  -  |
+| Contentful      |   -  |
+
+
+### Infomación de los desarrolladores
+| Nombres      | Github |
+| --------- | -----:|
+| Juan David  | ..... |
+| Linda Valentina      |   ...  |
+
+### Licencia
+Esta aplicación está diseñada exclusivamente para estudiantes universitarios con el objetivo de facilitar su experiencia académica. Al utilizar esta aplicación, aceptas los términos y condiciones establecidos en la licencia de uso y en nuestra política de privacidad.
