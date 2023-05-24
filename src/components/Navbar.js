@@ -24,7 +24,7 @@ const Navbar = () => {
                     Acerca De
                 </Link>
                 <Link to="/participacion" className="nav-link" activeClassName='active-link' onClick={() => setShow(false)}>
-                    Participacion
+                    Participación
                 </Link>
                 <Link to="/proyectos" className="nav-link" activeClassName='active-link' onClick={() => setShow(false)}>
                     Proyectos
