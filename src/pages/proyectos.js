@@ -45,6 +45,7 @@ const Proyectos = () => {
             return (
               <ArticleGame
                 key={id}
+                id={id}
                 image={imagen.gatsbyImageData}
                 title={title}
                 text={description.internal.content}
