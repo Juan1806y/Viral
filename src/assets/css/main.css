@@ -951,6 +951,12 @@ form > *:last-child {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.article-description{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .article-game-container {
   padding: 0 16px;
 }
