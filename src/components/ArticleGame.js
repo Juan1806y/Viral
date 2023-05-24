@@ -2,12 +2,13 @@ import React from "react";
 import "normalize.css";
 import "../assets/css/main.css";
 import { Link } from "gatsby";
+import {GatsbyImage} from 'gatsby-plugin-image'
 
-const ArticleGame = ({ src, title, text }) => {
+const ArticleGame = ({ image, title, text }) => {
   return (
     <div className="article-game-card">
       <Link to="/juego1">
-        <img src={src} alt="photo gamen" className="article-game-img" />
+        <GatsbyImage image={image} alt="photo gamen" className="article-game-img" />
       </Link>
       <div className="article-game-container">
         <h4>

@@ -15,7 +15,10 @@ Durante el desarrollo de este proyecto, hemos utilizado diversas tecnologías y 
 | Nombre      | Ruta |
 | --------- | -----:|
 | Home  | " / " |
+| Acerca de  | " /about " |
+| Participación  | " /participacion " |
 | Proyectos  | " /proyectos " |
+| Contacto  | " /contact " |
 
 ### Cómo ejecutar en local el proyecto
 1. Inicializar un nuevo proyecto.
@@ -32,25 +35,28 @@ Durante el desarrollo de este proyecto, hemos utilizado diversas tecnologías y 
 Su sitio ahora se está ejecutando en http://localhost:8000. Abra el my-gatsby-sitedirectorio en el editor de código de su elección y edítelo src/pages/index.js. ¡Guarde sus cambios y el navegador se actualizará en tiempo real!
 
 ### Despliegue del proyecto
-1. -
-2. -
-3. -
+1. Inicio de sesión en Gatsby Cloud
+2. Asociar github 
+3. Seleccionar Proyecto
+4. Adicionar configuración de Contentful
+5. Desplegar
 
 ### Listado de tecnologias
 | Tecnología      | Version |
 | --------- | -----:|
-| Nodejs  | 20 |
-| Gatsby     |  -  |
-| React     |  -  |
-| Graphql     |  -  |
-| Contentful      |   -  |
+| Nodejs  | 20.1.0 |
+| Gatsby     |  5.8.1  |
+| React     |  18.2.0  |
+| Graphql     |  16.0.0  |
+| Contentful      |   8.9.1  |
 
 
 ### Infomación de los desarrolladores
 | Nombres      | Github |
 | --------- | -----:|
-| Juan David  | ..... |
-| Linda Valentina      |   ...  |
+| Juan David Ortiz Cano  | https://github.com/Juan1806y |
+| Linda Valentina Bohorquez Hernandez   |   https://github.com/LindaValentinaBohorquez  |
+| Nicole Stefania Duarte  | https://github.com/ |
 
 ### Licencia
 Esta aplicación está diseñada exclusivamente para estudiantes universitarios con el objetivo de facilitar su experiencia académica. Al utilizar esta aplicación, aceptas los términos y condiciones establecidos en la licencia de uso y en nuestra política de privacidad.
