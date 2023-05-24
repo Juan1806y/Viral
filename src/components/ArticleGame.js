@@ -14,7 +14,7 @@ const ArticleGame = ({ image, title, text }) => {
         <h4>
           <b>{title}</b>
         </h4>
-        <p>{text}</p>
+        <div className="article-description">{text}</div>
       </div>
     </div>
   );

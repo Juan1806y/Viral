@@ -56,7 +56,7 @@ Su sitio ahora se está ejecutando en http://localhost:8000. Abra el my-gatsby-s
 | --------- | -----:|
 | Juan David Ortiz Cano  | https://github.com/Juan1806y |
 | Linda Valentina Bohorquez Hernandez   |   https://github.com/LindaValentinaBohorquez  |
-| Nicole Stefania Duarte  | https://github.com/ |
+| Nicole Stefania Angarita  | https://github.com/ |
 
 ### Licencia
 Esta aplicación está diseñada exclusivamente para estudiantes universitarios con el objetivo de facilitar su experiencia académica. Al utilizar esta aplicación, aceptas los términos y condiciones establecidos en la licencia de uso y en nuestra política de privacidad.
