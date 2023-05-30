@@ -1,6 +1,7 @@
 import React from "react";
 import ArticleGame from "../components/ArticleGame";
 import { graphql, useStaticQuery } from "gatsby";
+import "../assets/css/main.css";
 
 const query = graphql`
   query {
@@ -23,11 +24,11 @@ const AllVideoGames = () => {
     const data = useStaticQuery(query);
     const videoGames = data.allContentfulVideoGames.nodes;
     return (
-        <div>
-            <section>
-                <ArticleGame videoGames = {videoGames}/>
+            <section className="proyects-list">
+           { 
+            videoGames.map((video) => <ArticleGame id={video.id} title={video.title} imagen={video.imagen} description={video.description}/>)
+            }
             </section>
-        </div>
     )
   }
 
