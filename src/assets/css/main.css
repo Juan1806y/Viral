@@ -565,6 +565,7 @@ form > *:last-child {
   color: var(--white);
   position: relative;
   bottom: 0px;
+
 }
 .page-footer h5 {
   margin-bottom: 0;

@@ -1,34 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Gallery from "../components/Gallery";
-import ArticleGame from "../components/ArticleGame";
-import { graphql, useStaticQuery } from "gatsby";
-
-const query = graphql`
-  query {
-    allContentfulVideoGames(sort: { title: ASC }) {
-      nodes {
-        id
-        title
-        description {
-          internal {
-            content
-          }
-        }
-        imagen {  
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
-        }
-      }
-    }
-  }
-`;
+import AllGames from "../components/AllGames"
 
 const Proyectos = () => {
-  const data = useStaticQuery(query);
-  const proyects = data.allContentfulVideoGames.nodes;
   return (
     <Layout>
-      <div className="page">
+      <main className="page">
         <Gallery />
         <section className="about-page3">
           <article>
@@ -39,21 +17,8 @@ const Proyectos = () => {
             </p>
           </article>
         </section>
-        <section className="container-grid">
-          {proyects.map((proyect) => {
-            const { id, title, description, imagen } = proyect;
-            return (
-              <ArticleGame
-                key={id}
-                id={id}
-                image={imagen.gatsbyImageData}
-                title={title}
-                text={description.internal.content}
-              />
-            );
-          })}
-        </section>
-      </div>
+        <AllGames></AllGames>
+      </main>
     </Layout>
   );
 };

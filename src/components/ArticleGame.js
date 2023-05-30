@@ -3,21 +3,25 @@ import "normalize.css";
 import "../assets/css/main.css";
 import { Link } from "gatsby";
 import {GatsbyImage} from 'gatsby-plugin-image'
+import slugify from "slugify";
 
-const ArticleGame = ({ id, image, title, text }) => {
-  return (
-    <div className="article-game-card">
-      <Link key={id} to={`/juego`}>
-        <GatsbyImage image={image} alt={title} className="article-game-img" />
-      </Link>
-      <div className="article-game-container">
-        <h4>
+const ArticleGame = ({videoGames=[]}) => {
+  return <div className="">{
+    videoGames.map((videoGames)=>{
+      const{id, title, imagen, description} = videoGames;
+      const slug = slugify(title, {lower:true})
+      return<Link key={id} to={`/${slug}`} className="">
+        <GatsbyImage image={imagen.gatsbyImageData} alt={title} className="" />
+        <div className="">
           <b>{title}</b>
-        </h4>
-        <div className="article-description">{text}</div>
-      </div>
-    </div>
-  );
-};
+        </div>
+      </Link>
+
+
+    })
+
+  }</div>
+
+}
 
 export default ArticleGame;
