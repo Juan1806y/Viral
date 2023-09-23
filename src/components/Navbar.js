@@ -30,7 +30,7 @@ const Navbar = () => {
                     Proyectos
                 </Link>
                 <Link to="/contact" className="nav-link" activeClassName='active-link' onClick={() => setShow(false)}>
-                    Contacto
+                    Contáctanos
                 </Link>
             </div>
         </div>
